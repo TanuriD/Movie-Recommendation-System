@@ -6,7 +6,7 @@ from surprise.model_selection import cross_validate
 import pandas as pd
 
 
-ratings = pd.read_csv("Movie-Recommendation-System/data/ratings.csv")
+ratings = pd.read_csv("data/ratings.csv")
 
 reader = Reader(rating_scale=(0.5, 5))
 
