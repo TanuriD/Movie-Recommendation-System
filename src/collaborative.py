@@ -7,7 +7,7 @@ from surprise import Dataset, Reader, SVD
 # -----------------------------
 def load_data():
 
-    ratings = pd.read_csv("Movie-Recommendation-System/data/ratings.csv")
+    ratings = pd.read_csv("data/ratings.csv")
 
     reader = Reader(rating_scale=(0.5, 5))
 
@@ -95,7 +95,7 @@ if __name__ == "__main__":
     model, ratings = train_model()
 
     # Load movie data
-    movies = pd.read_csv("Movie-Recommendation-System/data/movies.csv")
+    movies = pd.read_csv("data/movies.csv")
 
     # Get recommendations for User 1
     recommendations = recommend_movies(
